@@ -23,5 +23,15 @@ namespace WorkerPayment.Entities
             BaseSalary = baseSalary;
             Department = department;
         }
+
+        public void AddContract(HourContract contract)
+        {
+            Contracts.Add(contract);
+        }
+
+        public void RemoveContract(HourContract contract)
+        {
+            Contracts.Remove(contract);
+        }
     }
 }
