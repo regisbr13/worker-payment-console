@@ -46,5 +46,11 @@ namespace WorkerPayment.Entities
             }
             return total;
         }
+
+        public override string ToString()
+        {
+            return "Name: " + Name + "\n"
+                    + "Department: " + Department;
+        }
     }
 }
