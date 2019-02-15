@@ -52,7 +52,14 @@ namespace WorkerPayment
                 catch(ArgumentException e)
                 {
                     exception = e;
-                    Console.WriteLine("Error! " + e.Message);
+                    Console.WriteLine("Invalid option! " + e.Message);
+                    Console.WriteLine();
+                    Console.WriteLine("Let's start again:");
+                }
+                catch (FormatException e)
+                {
+                    exception = e;
+                    Console.WriteLine("Format error! " + e.Message);
                     Console.WriteLine();
                     Console.WriteLine("Let's start again:");
                 }
